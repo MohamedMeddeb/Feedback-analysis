@@ -1,4 +1,4 @@
-# Feedback Analysis AI
+# Feedback Analysis
 
 📊 Your intelligent feedback insights assistant
 
