@@ -5,47 +5,53 @@
 ## ✨ Features
 
 🔍 **Sentiment Analysis** - Understand emotional tone in feedback  
-📈 **Category Scoring** - Automatic skill categorization (Business, Technical, Leadership)  
-🌍 **Multilingual Support** - Works with English and French feedback  
-📊 **Visual Analytics** - Interactive charts and improvement tracking  
+📈 **Category Scoring** - Automatic skill categorization  
+🌍 **Multilingual Support** - Works with English/French feedback  
+📅 **Multi-Period Comparison** - Track skill development over time  
 
-## ⚠️ Important Requirements
+## 📸 Screenshots
 
-🐍 **Python 3.8-3.12 ONLY**  
-(spaCy installation currently requires Python ≤ 3.12)
+### Application Workflow
 
-## 📋 How to Use
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="screenshots/main_ui.png" width="100%" alt="Main Interface"></td>
+      <td><img src="screenshots/file_selection.png" width="100%" alt="File Selection"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><em>Main application interface and multi-file selection dialog (supports up to 3 files simultaneously)</em></td>
+    </tr>
+  </table>
+  
+  <table>
+    <tr>
+      <td><img src="screenshots/analysis_results.png" width="100%" alt="Analysis Results"></td>
+      <td><img src="screenshots/charts_view.png" width="100%" alt="Interactive Charts"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><em>Detailed analysis results and visualization examples</em></td>
+    </tr>
+  </table>
+  
+  <img src="screenshots/multi_file.png" width="80%" alt="Multi-File Comparison">
+  <p><em>Trend analysis comparing feedback across multiple evaluation periods</em></p>
+</div>
 
-### Main Analysis
-1. Upload Excel/CSV feedback files
-2. Enter the employee's Feedback ID
-3. View comprehensive sentiment and category analysis
+## ⚠️ Requirements
 
-### Results Breakdown
-📊 **Scorecard** - Overall performance metrics  
-📈 **Trend Charts** - Skill improvement over time  
-💬 **Key Comments** - Most significant feedback excerpts  
+🐍 **Python 3.8-3.12** (spaCy compatibility)  
+📊 **Excel Files** (.xlsx or .csv format)  
+💾 **1GB+ Free Memory** for large datasets  
 
-## 🛠️ Technical Highlights
-
-Feature | Description
----|---
-NLP Engine | Uses spaCy and TextBlob for advanced text analysis
-Smart Categorization | Hybrid model combining keywords and semantic similarity
-Translation | Automatic French-to-English translation of feedback
-Visualization | Interactive Matplotlib charts in Tkinter GUI
-
-## 🚀 Getting Started
+## 🚀 Quick Start
 
 ```bash
-# Clone the repository
+# 1. Clone repository
 git clone https://github.com/MohamedMeddeb/Feedback-analysis.git
 
-# Install dependencies (Python 3.8-3.12 required)
-pip install pandas textblob googletrans langdetect spacy matplotlib seaborn
+# 2. Install dependencies (Python 3.8-3.12)
+pip install -r requirements.txt
 
-# Download language model
-python -m spacy download en_core_web_md
-
-# Run the application
+# 3. Run application
 python feedback_analyzer.py
